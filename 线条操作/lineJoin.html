@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      canvas {
+        border: 1px solid #eaeaea;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <script type="text/javascript">
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.lineWidth = 16;
+      ctx.strokeStyle = "black";
+      
+      ctx.moveTo(20, 20);
+      ctx.lineTo(280, 120);
+      ctx.lineTo(480, 60);
+      ctx.lineTo(380, 220);
+      ctx.lineJoin = 'miter';
+      ctx.stroke();
+
+      ctx.moveTo(150, 150);
+      ctx.lineTo(250, 450);
+      ctx.lineTo(190, 490);
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+
+      ctx.moveTo(220, 220);
+      ctx.lineTo(380, 320);
+      ctx.lineTo(340, 360);
+      ctx.lineJoin = 'bevel';
+      ctx.stroke();
+
+    </script>
+  </body>
+</html>
