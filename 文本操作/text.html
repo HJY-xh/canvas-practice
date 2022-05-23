@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      canvas {
+        border: 1px solid #eaeaea;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <script type="text/javascript">
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "blue";
+      ctx.font = "bold 30px 微软雅黑";
+      ctx.fillText("哈哈哈哈", 30, 60);
+
+      ctx.strokeStyle = "red";
+      ctx.font = "bold 30px 宋体";
+      ctx.strokeText("呵呵呵呵", 30, 160);
+    </script>
+  </body>
+</html>
